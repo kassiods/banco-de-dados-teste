@@ -10,7 +10,7 @@ const app = new Hono()
 app.use(cors())
 
 app.get('/', (c) => {
-  return c.text('Hello Hono!')
+  return c.text('Opa eae!')
 })
 
 app.route("/login", loginRoute)
