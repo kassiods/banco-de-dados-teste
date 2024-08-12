@@ -31,10 +31,6 @@ loginRoute.post("/", async (c: Context) => {
     {
       data: {
         token: token,
-        user: {
-          name: user.name,
-          email: user.email,
-      },
       },
     },
     200,
