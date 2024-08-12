@@ -13,7 +13,5 @@ app.get('/', (c) => {
 })
 
 app.route("/login", loginRoute)
-app.use("/*", jwt({secret: Bun.env.JWT_SECRET as string}))
-app.route("/users", usersRoute)
 
 export default app
